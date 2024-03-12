@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFEFE7;
+  color: #7C6A0A;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 36px 60px 46px 85px;
+}
+@media screen and (max-width: 520px) {
+  nav {
+    padding-inline: 30px;
+    padding-bottom: 0;
+  }
+}
+nav p {
+  font-size: 3.2rem;
+  color: #7C6A0A;
+}
+@media screen and (max-width: 520px) {
+  nav p {
+    font-size: 2.8rem;
+  }
+}
+nav .icons {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 520px) {
+  nav .icons {
+    gap: 24px;
+  }
+}
+nav .icons button {
+  background: none;
+  border-style: none;
+  width: 45px;
+  height: 45px;
+}
+@media screen and (max-width: 660px) {
+  nav .icons button {
+    width: 30px;
+    height: 30px;
+  }
+}
+nav .icons svg {
+  width: auto;
+  height: auto;
+}
+nav .icons svg path {
+  stroke: #7C6A0A;
+}
+main {
+  width: 100%;
+}
+main h2 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+main > section {
+  margin: 0 auto;
+  padding: 0 70px;
+  width: 100%;
+  max-width: 1300px;
+}
+@media screen and (max-width: 660px) {
+  main > section {
+    padding: 0 32px;
+  }
+}
+
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 75px 65px 115px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  .hero {
+    padding-inline: 32px;
+  }
+}
+.hero .impact-section {
+  width: 45%;
+}
+.hero .impact-section h1 {
+  font-size: 4.5rem;
+  margin: 60px 0;
+}
+.hero .impact-section p {
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+.hero .impact-section button {
+  background: #FA9500;
+  color: white;
+  border: none;
+  width: 240px;
+  height: 70px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.1rem;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.hero .image-section {
+  width: 35%;
+}
+@media screen and (max-width: 900px) {
+  .hero .image-section {
+    width: 45%;
+  }
+}
+.hero .image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .hero .image-section img {
+    height: 500px;
+    max-width: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero .impact-section, .hero .image-section {
+    width: 100%;
+  }
+}
+
+.product-section .healthcare .cards-container, .product-section .furniture .cards-container {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.product-section .healthcare .cards-container .card-item, .product-section .furniture .cards-container .card-item {
+  width: 26%;
+  max-width: 400px;
+  background-color: #FFDAC6;
+  border-radius: 8px;
+}
+@media screen and (max-width: 1100px) {
+  .product-section .healthcare .cards-container .card-item, .product-section .furniture .cards-container .card-item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .product-section .healthcare .cards-container .card-item, .product-section .furniture .cards-container .card-item {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .product-section .healthcare .cards-container .card-item, .product-section .furniture .cards-container .card-item {
+    width: 100%;
+    max-width: none;
+  }
+}
+.product-section .healthcare .cards-container .card-item .love-icon, .product-section .furniture .cards-container .card-item .love-icon {
+  display: flex;
+  justify-content: end;
+}
+.product-section .healthcare .cards-container .card-item .love-icon svg, .product-section .furniture .cards-container .card-item .love-icon svg {
+  width: 30px;
+  height: auto;
+}
+.product-section .healthcare .cards-container .card-item .love-icon svg path, .product-section .furniture .cards-container .card-item .love-icon svg path {
+  stroke: #7C6A0A;
+}
+.product-section .healthcare .cards-container .card-item .love-icon svg:hover, .product-section .furniture .cards-container .card-item .love-icon svg:hover {
+  fill: #7C6A0A;
+}
+.product-section .healthcare .cards-container .card-item .love-icon svg, .product-section .furniture .cards-container .card-item .love-icon svg {
+  margin: 10px;
+}
+.product-section .healthcare .cards-container .card-item .card-info, .product-section .furniture .cards-container .card-item .card-info {
+  padding: 0 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-section .healthcare .cards-container .card-item .card-info figure, .product-section .furniture .cards-container .card-item .card-info figure {
+  width: 100%;
+}
+.product-section .healthcare .cards-container .card-item .card-info img, .product-section .furniture .cards-container .card-item .card-info img {
+  width: 100%;
+  border-radius: 6px;
+}
+@media screen and (max-width: 660px) {
+  .product-section .healthcare .cards-container .card-item .card-info img, .product-section .furniture .cards-container .card-item .card-info img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 660px) {
+  .product-section .healthcare .cards-container .card-item .card-info img, .product-section .furniture .cards-container .card-item .card-info img {
+    height: 240px;
+  }
+}
+.product-section .healthcare .cards-container .card-item .card-info .card-description, .product-section .furniture .cards-container .card-item .card-info .card-description {
+  margin-top: 12px;
+}
+.product-section .healthcare .cards-container .card-item .card-info .card-description h4, .product-section .furniture .cards-container .card-item .card-info .card-description h4 {
+  font-size: 2.5rem;
+}
+.product-section .healthcare .cards-container .card-item .card-info .card-description p, .product-section .furniture .cards-container .card-item .card-info .card-description p {
+  font-size: 1.6rem;
+}
+.product-section .furniture .cards-container .card-item {
+  background-color: #BABD8D;
+  color: white;
+}
+.product-section .furniture .cards-container .card-item .love-icon svg {
+  width: 30px;
+  height: auto;
+}
+.product-section .furniture .cards-container .card-item .love-icon svg path {
+  stroke: white;
+}
+.product-section .furniture .cards-container .card-item .love-icon svg:hover {
+  fill: white;
+}
+
+.info-section .about-us .mission-section {
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .info-section .about-us .mission-section {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info-section .about-us .mission-section {
+    padding: 50px 30px;
+  }
+}
+.info-section .about-us .mission-section .earth, .info-section .about-us .mission-section .innovation {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .info-section .about-us .mission-section .earth, .info-section .about-us .mission-section .innovation {
+    width: 100%;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .info-section .about-us .mission-section .earth, .info-section .about-us .mission-section .innovation {
+    flex-direction: column;
+  }
+}
+.info-section .about-us .mission-section .earth img, .info-section .about-us .mission-section .innovation img {
+  width: 164px;
+  height: 164px;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .info-section .about-us .mission-section .earth img, .info-section .about-us .mission-section .innovation img {
+    width: 136px;
+    height: 136px;
+  }
+}
+.info-section .about-us .mission-section .earth p, .info-section .about-us .mission-section .innovation p {
+  color: #FA9500;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .info-section .about-us .mission-section .earth p, .info-section .about-us .mission-section .innovation p {
+    font-size: 2.2rem;
+  }
+}
+.info-section .gallery .images-container {
+  padding: 70px 0 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .info-section .gallery .images-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.info-section .gallery .images-container figure {
+  width: 30%;
+  max-width: 400px;
+  height: 400px;
+}
+@media screen and (max-width: 768px) {
+  .info-section .gallery .images-container figure {
+    width: 80%;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 520px) {
+  .info-section .gallery .images-container figure {
+    height: 280px;
+  }
+}
+.info-section .gallery .images-container figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.info-section .gallery .images-container figure img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.info-section .location {
+  padding-bottom: 120px;
+  color: #FA9500;
+}
+.info-section .location img {
+  width: 100%;
+  margin-top: 70px;
+}
+@media screen and (max-width: 768px) {
+  .info-section .location img {
+    height: 420px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 520px) {
+  .info-section .location img {
+    height: 280px;
+  }
+}
+.info-section .location .reference {
+  margin: 30px 0 10px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.info-section .location .direction {
+  margin: 10px 0 30px;
+  font-size: 2.4rem;
+}
+
+footer {
+  padding: 70px;
+  background-color: #FA9500;
+  color: white;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 660px) {
+  footer {
+    padding-inline: 32px;
+  }
+}
+footer div {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 520px) {
+  footer .text {
+    margin-bottom: 32px;
+  }
+}
+footer .text h3 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+footer .text p {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}/*# sourceMappingURL=main.css.map */
